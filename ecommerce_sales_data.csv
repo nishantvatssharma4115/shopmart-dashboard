@@ -1,0 +1,301 @@
+Order ID,Date,Region,Product Category,Product Name,Units Sold,Unit Price,Discount Percent,Customer Segment,Total Revenue
+ORD-0001,2023-04-13,North,Electronics,Smartphone,14,296.74,33.2,VIP,2775.11
+ORD-0002,2023-12-15,North,Clothing,Jacket,21,332.02,38.6,Returning,4281.07
+ORD-0003,2023-09-28,East,Sports,Water Bottle,48,674.15,5.0,VIP,30741.24
+ORD-0004,2023-04-17,South,Electronics,Smartphone,20,753.61,29.2,VIP,10671.12
+ORD-0005,2023-03-13,South,Food,Oats,8,792.61,37.5,Returning,3963.05
+ORD-0006,2023-07-08,South,Sports,Yoga Mat,7,790.66,7.2,Returning,5136.13
+ORD-0007,2023-01-21,North,Sports,Resistance Band,3,95.75,2.7,Returning,279.49
+ORD-0008,2023-04-13,North,Clothing,Sneakers,17,453.29,29.6,Returning,5424.97
+ORD-0009,2023-05-02,West,Beauty,Serum,33,62.27,23.0,New,1582.28
+ORD-0010,2023-08-03,North,Clothing,Jacket,48,551.78,33.7,Returning,17559.85
+ORD-0011,2023-11-27,North,Electronics,Smartphone,12,444.32,5.6,VIP,5033.26
+ORD-0012,2023-03-29,North,Food,Oats,22,888.26,31.8,New,13327.45
+ORD-0013,2023-04-10,South,Food,Almonds,22,354.16,8.1,Returning,7160.41
+ORD-0014,2023-12-26,South,Electronics,Smartphone,46,121.48,6.5,New,5224.85
+ORD-0015,2023-06-01,North,Food,Honey,30,147.28,6.6,VIP,4126.79
+ORD-0016,2023-05-11,South,Clothing,Dress,38,762.7,32.6,VIP,19534.27
+ORD-0017,2023-05-30,West,Clothing,T-Shirt,38,620.12,26.6,VIP,17296.39
+ORD-0018,2023-11-05,South,Electronics,Smartwatch,45,105.62,20.9,New,3759.54
+ORD-0019,2023-09-15,West,Food,Almonds,8,88.69,0.0,New,709.52
+ORD-0020,2023-12-10,East,Sports,Skipping Rope,27,702.46,35.1,Returning,12309.21
+ORD-0021,2023-10-21,North,Beauty,Moisturizer,27,77.4,15.7,Returning,1761.7
+ORD-0022,2023-07-11,South,Sports,Skipping Rope,34,822.74,32.7,Returning,18825.94
+ORD-0023,2023-10-04,West,Clothing,Jeans,21,707.7,17.6,VIP,12246.04
+ORD-0024,2023-06-10,East,Clothing,Sneakers,30,453.29,15.1,Returning,11545.3
+ORD-0025,2023-11-10,East,Clothing,Jacket,33,89.41,18.5,New,2404.68
+ORD-0026,2023-01-22,South,Clothing,Sneakers,28,986.7,12.1,Returning,24284.66
+ORD-0027,2023-09-10,South,Beauty,Sunscreen,47,377.4,29.9,VIP,12434.2
+ORD-0028,2023-08-24,East,Electronics,Smartwatch,33,373.79,20.1,Returning,9855.72
+ORD-0029,2023-12-11,North,Clothing,Dress,5,813.73,9.3,VIP,3690.27
+ORD-0030,2023-02-18,North,Food,Honey,48,947.5,36.0,VIP,29107.2
+ORD-0031,2023-02-28,West,Beauty,Sunscreen,19,986.06,15.4,VIP,15849.93
+ORD-0032,2023-06-19,North,Clothing,Jacket,4,754.6,21.7,Returning,2363.41
+ORD-0033,2023-07-07,East,Food,Almonds,35,379.37,36.3,New,8458.05
+ORD-0034,2023-09-28,East,Clothing,Jeans,49,88.08,25.0,Returning,3236.94
+ORD-0035,2023-07-09,East,Electronics,Smartphone,17,778.25,4.7,VIP,12608.43
+ORD-0036,2023-06-24,North,Beauty,Lipstick,44,560.61,37.6,Returning,15392.11
+ORD-0037,2023-02-20,West,Electronics,Smartwatch,28,427.1,25.1,Returning,8957.14
+ORD-0038,2023-12-30,North,Beauty,Moisturizer,30,906.81,13.4,Returning,23558.92
+ORD-0039,2023-02-24,West,Clothing,Dress,29,115.64,5.6,VIP,3165.76
+ORD-0040,2023-09-01,North,Clothing,Sneakers,46,495.16,31.8,VIP,15534.16
+ORD-0041,2023-11-16,East,Beauty,Sunscreen,6,16.3,24.8,Returning,73.55
+ORD-0042,2023-05-11,East,Food,Honey,35,471.31,21.3,Returning,12982.23
+ORD-0043,2023-11-03,South,Food,Almonds,41,61.02,35.8,Returning,1606.17
+ORD-0044,2023-05-15,North,Clothing,T-Shirt,37,123.22,31.5,New,3123.01
+ORD-0045,2023-01-21,North,Clothing,Dress,24,121.94,6.1,VIP,2748.04
+ORD-0046,2023-11-25,South,Electronics,Headphones,29,650.96,12.5,New,16518.11
+ORD-0047,2023-06-16,East,Clothing,Jeans,49,747.31,9.9,VIP,32992.99
+ORD-0048,2023-10-01,North,Beauty,Serum,46,585.45,29.8,Returning,18905.35
+ORD-0049,2023-03-30,South,Food,Green Tea,31,962.35,1.3,New,29445.02
+ORD-0050,2023-11-12,North,Food,Almonds,35,377.99,22.8,Returning,10213.29
+ORD-0051,2023-01-14,West,Electronics,Headphones,33,289.28,30.5,New,6634.64
+ORD-0052,2023-08-30,East,Food,Almonds,21,869.25,35.1,Returning,11847.01
+ORD-0053,2023-09-22,West,Food,Almonds,32,227.48,13.7,VIP,6282.09
+ORD-0054,2023-12-12,East,Sports,Water Bottle,23,963.4,32.9,Returning,14868.15
+ORD-0055,2023-02-22,South,Beauty,Lipstick,33,17.09,4.4,VIP,539.16
+ORD-0056,2023-12-06,East,Sports,Water Bottle,3,970.02,33.9,Returning,1923.55
+ORD-0057,2023-04-02,East,Food,Protein Bar,18,47.94,5.1,Returning,818.91
+ORD-0058,2023-09-21,South,Electronics,Tablet,25,891.68,15.9,VIP,18747.57
+ORD-0059,2023-02-04,East,Electronics,Laptop,42,530.06,31.9,VIP,15160.78
+ORD-0060,2023-07-25,North,Food,Protein Bar,31,992.99,6.0,New,28935.73
+ORD-0061,2023-03-22,South,Clothing,Jeans,3,78.43,9.2,Returning,213.64
+ORD-0062,2023-02-19,South,Sports,Skipping Rope,40,556.08,28.9,New,15814.92
+ORD-0063,2023-12-26,South,Food,Honey,46,969.45,28.8,New,31751.43
+ORD-0064,2023-01-02,West,Electronics,Tablet,24,525.48,25.6,VIP,9382.97
+ORD-0065,2023-02-23,West,Electronics,Laptop,50,631.25,27.8,VIP,22788.12
+ORD-0066,2023-04-16,East,Sports,Skipping Rope,32,697.26,21.7,Returning,17470.55
+ORD-0067,2023-09-17,South,Beauty,Serum,47,457.26,10.1,New,19320.61
+ORD-0068,2023-11-06,East,Food,Honey,22,629.41,13.8,Returning,11936.13
+ORD-0069,2023-07-10,North,Food,Protein Bar,23,586.39,7.3,New,12502.42
+ORD-0070,2023-08-06,South,Beauty,Face Wash,2,901.64,36.3,VIP,1148.69
+ORD-0071,2023-02-13,North,Sports,Resistance Band,27,50.22,23.3,Returning,1040.01
+ORD-0072,2023-06-11,East,Sports,Dumbbells,42,284.56,16.0,New,10039.28
+ORD-0073,2023-07-21,West,Electronics,Smartwatch,2,950.65,18.5,VIP,1549.56
+ORD-0074,2023-09-27,East,Beauty,Moisturizer,26,890.8,37.9,New,14382.86
+ORD-0075,2023-12-17,North,Sports,Resistance Band,17,458.37,6.1,Returning,7316.96
+ORD-0076,2023-10-31,South,Clothing,Sneakers,40,622.03,23.4,VIP,19059.0
+ORD-0077,2023-09-28,East,Food,Almonds,33,280.99,20.2,New,7399.59
+ORD-0078,2023-08-03,South,Electronics,Smartwatch,9,192.18,24.5,New,1305.86
+ORD-0079,2023-09-09,West,Beauty,Sunscreen,43,466.38,0.7,Returning,19913.96
+ORD-0080,2023-07-09,West,Electronics,Tablet,48,356.58,34.9,Returning,11142.41
+ORD-0081,2023-10-23,West,Sports,Resistance Band,39,585.73,37.3,Returning,14322.86
+ORD-0082,2023-08-01,South,Sports,Skipping Rope,29,82.35,22.6,VIP,1848.43
+ORD-0083,2023-07-27,East,Clothing,Sneakers,42,974.51,27.9,VIP,29510.11
+ORD-0084,2023-08-25,South,Food,Almonds,26,986.27,36.9,Returning,16180.75
+ORD-0085,2023-12-04,South,Beauty,Lipstick,35,699.66,28.3,VIP,17557.97
+ORD-0086,2023-02-22,East,Electronics,Smartwatch,50,538.41,6.1,New,25278.35
+ORD-0087,2023-10-07,West,Food,Almonds,25,312.98,23.1,Returning,6017.04
+ORD-0088,2023-08-05,West,Sports,Resistance Band,24,814.72,24.3,VIP,14801.83
+ORD-0089,2023-09-09,East,Food,Almonds,13,686.3,17.0,VIP,7405.18
+ORD-0090,2023-07-07,South,Electronics,Laptop,7,166.8,29.5,Returning,823.16
+ORD-0091,2023-02-10,South,Food,Protein Bar,36,911.36,37.4,Returning,20538.41
+ORD-0092,2023-06-06,West,Sports,Dumbbells,45,823.42,37.0,VIP,23343.96
+ORD-0093,2023-01-15,North,Food,Almonds,20,950.04,18.0,VIP,15580.66
+ORD-0094,2023-10-28,North,Beauty,Face Wash,1,727.08,4.5,Returning,694.36
+ORD-0095,2023-03-06,North,Food,Oats,8,415.53999999999996,39.4,VIP,2014.54
+ORD-0096,2023-12-11,South,Beauty,Moisturizer,46,421.15,33.6,New,12863.61
+ORD-0097,2023-11-23,South,Food,Green Tea,16,933.06,5.0,VIP,14182.51
+ORD-0098,2023-01-09,West,Sports,Dumbbells,14,866.72,36.8,New,7668.74
+ORD-0099,2023-12-10,North,Clothing,Dress,12,49.99,34.8,New,391.12
+ORD-0100,2023-05-09,West,Clothing,Jacket,23,31.23,20.8,VIP,568.89
+ORD-0101,2023-05-16,West,Beauty,Sunscreen,15,379.58,23.7,VIP,4344.29
+ORD-0102,2023-03-04,West,Beauty,Sunscreen,28,811.49,16.0,Returning,19086.24
+ORD-0103,2023-05-19,East,Clothing,Sneakers,34,987.33,2.2,New,32830.7
+ORD-0104,2023-03-22,North,Sports,Resistance Band,2,154.66,13.4,VIP,267.87
+ORD-0105,2023-06-12,North,Sports,Yoga Mat,32,596.15,32.1,New,12953.15
+ORD-0106,2023-10-16,East,Food,Green Tea,23,383.98,0.2,Returning,8813.88
+ORD-0107,2023-09-18,East,Beauty,Lipstick,22,970.06,13.3,New,18502.92
+ORD-0108,2023-08-19,North,Sports,Dumbbells,25,842.9,15.9,VIP,17721.97
+ORD-0109,2023-02-10,East,Electronics,Headphones,22,839.13,21.5,VIP,14491.78
+ORD-0110,2023-01-28,West,Food,Green Tea,22,471.35,36.8,New,6553.65
+ORD-0111,2023-05-15,South,Food,Almonds,49,417.74,13.9,Returning,17624.03
+ORD-0112,2023-07-20,West,Clothing,T-Shirt,42,277.04,13.9,New,10018.32
+ORD-0113,2023-11-24,North,Beauty,Sunscreen,6,61.09,29.5,VIP,258.41
+ORD-0114,2023-09-25,East,Sports,Dumbbells,15,865.39,18.1,Returning,10631.32
+ORD-0115,2023-02-02,South,Sports,Resistance Band,43,813.83,9.0,New,31845.17
+ORD-0116,2023-02-17,North,Food,Protein Bar,37,999.71,18.1,New,30294.21
+ORD-0117,2023-03-03,East,Beauty,Face Wash,33,996.64,5.6,Returning,31047.33
+ORD-0118,2023-08-04,South,Beauty,Sunscreen,8,557.65,7.1,New,4144.45
+ORD-0119,2023-10-20,South,Beauty,Lipstick,44,770.13,19.9,Returning,27142.46
+ORD-0120,2023-04-09,East,Clothing,Jeans,44,945.03,16.8,Returning,34595.66
+ORD-0121,2023-06-21,South,Sports,Skipping Rope,5,850.39,36.6,Returning,2695.74
+ORD-0122,2023-12-26,North,Beauty,Face Wash,39,251.11,14.5,Returning,8373.26
+ORD-0123,2023-08-02,East,Clothing,T-Shirt,4,453.29,23.2,New,1392.51
+ORD-0124,2023-02-04,West,Electronics,Tablet,6,133.51,0.0,New,801.06
+ORD-0125,2023-08-15,North,Food,Almonds,45,954.27,0.5,VIP,42727.44
+ORD-0126,2023-04-11,North,Sports,Skipping Rope,32,608.14,26.5,Returning,14303.45
+ORD-0127,2023-05-11,East,Sports,Skipping Rope,30,592.525,7.1,VIP,16513.67
+ORD-0128,2023-09-14,East,Food,Honey,47,673.34,38.4,VIP,19494.54
+ORD-0129,2023-01-05,South,Electronics,Headphones,35,620.03,5.9,New,20420.69
+ORD-0130,2023-08-06,North,Clothing,Jeans,40,361.37,16.6,New,12055.3
+ORD-0131,2023-09-12,South,Food,Protein Bar,16,117.99,3.4,New,1823.65
+ORD-0132,2023-12-25,North,Clothing,Jacket,13,673.21,39.9,New,5259.79
+ORD-0133,2023-10-10,North,Clothing,Dress,50,522.7,20.1,VIP,20881.87
+ORD-0134,2023-07-26,West,Clothing,T-Shirt,42,773.45,23.8,Returning,24753.49
+ORD-0135,2023-01-15,North,Electronics,Smartphone,30,522.56,2.7,VIP,15253.53
+ORD-0136,2023-12-12,South,Electronics,Smartwatch,19,852.91,30.0,VIP,11343.7
+ORD-0137,2023-02-11,South,Clothing,Dress,17,554.14,8.4,New,8629.07
+ORD-0138,2023-06-28,West,Beauty,Face Wash,19,563.13,35.9,Returning,6858.36
+ORD-0139,2023-03-04,South,Sports,Water Bottle,28,877.26,8.2,VIP,22549.09
+ORD-0140,2023-12-18,East,Electronics,Smartphone,26,406.46,7.6,New,9764.8
+ORD-0141,2023-08-19,West,Beauty,Moisturizer,37,138.34,1.5,New,5041.8
+ORD-0142,2023-08-29,South,Beauty,Moisturizer,26,33.64,0.0,Returning,874.64
+ORD-0143,2023-02-21,South,Sports,Water Bottle,23,756.35,22.6,VIP,13464.54
+ORD-0144,2023-04-06,East,Clothing,Jacket,9,622.2,2.6,Returning,5454.21
+ORD-0145,2023-08-10,West,Beauty,Face Wash,12,705.55,31.0,Returning,5841.95
+ORD-0146,2023-08-19,East,Beauty,Moisturizer,1,216.9,18.1,Returning,177.64
+ORD-0147,2023-08-25,West,Beauty,Face Wash,1,140.69,21.0,VIP,111.15
+ORD-0148,2023-05-23,West,Clothing,Sneakers,47,19.47,17.6,New,754.03
+ORD-0149,2023-06-20,North,Clothing,Dress,34,353.83,16.0,Returning,10105.38
+ORD-0150,2023-01-29,South,Electronics,Tablet,32,591.96,22.4,Returning,14699.55
+ORD-0151,2023-02-05,South,Electronics,Tablet,48,395.28,6.2,VIP,17797.09
+ORD-0152,2023-01-13,North,Beauty,Sunscreen,25,440.28,7.3,VIP,10203.49
+ORD-0153,2023-06-09,East,Clothing,Jeans,40,904.63,34.5,New,23701.31
+ORD-0154,2023-11-23,North,Clothing,Sneakers,45,351.51,37.8,New,9838.76
+ORD-0155,2023-07-06,South,Sports,Skipping Rope,1,516.41,14.9,Returning,439.46
+ORD-0156,2023-08-31,South,Beauty,Serum,16,784.73,10.8,Returning,11199.67
+ORD-0157,2023-03-27,North,Electronics,Smartwatch,39,399.56,25.8,VIP,11562.47
+ORD-0158,2023-10-11,North,Sports,Resistance Band,5,623.97,16.3,Returning,2611.31
+ORD-0159,2023-03-07,North,Clothing,Sneakers,22,863.04,1.0,VIP,18797.01
+ORD-0160,2023-06-19,South,Electronics,Smartwatch,29,949.76,6.2,Returning,25835.37
+ORD-0161,2023-02-14,North,Beauty,Lipstick,3,151.34,28.6,VIP,324.17
+ORD-0162,2023-03-03,North,Clothing,Sneakers,12,926.95,26.4,Returning,8186.82
+ORD-0163,2023-05-14,East,Beauty,Sunscreen,26,494.65,1.1,Returning,12719.43
+ORD-0164,2023-10-11,North,Sports,Yoga Mat,16,592.525,8.9,Returning,8636.64
+ORD-0165,2023-01-28,South,Sports,Water Bottle,37,461.84,9.2,New,15515.98
+ORD-0166,2023-04-18,East,Sports,Yoga Mat,22,980.12,26.9,Returning,15762.29
+ORD-0167,2023-02-13,West,Food,Green Tea,29,495.15,0.8,Returning,14244.48
+ORD-0168,2023-12-06,South,Beauty,Moisturizer,14,332.1,4.2,New,4454.13
+ORD-0169,2023-10-13,South,Sports,Resistance Band,28,635.23,32.0,New,12094.78
+ORD-0170,2023-11-27,West,Sports,Yoga Mat,5,243.94,7.1,Returning,1133.1
+ORD-0171,2023-05-08,South,Beauty,Moisturizer,47,80.48,26.1,VIP,2795.31
+ORD-0172,2023-12-14,West,Sports,Dumbbells,49,133.23,9.5,Returning,5908.08
+ORD-0173,2023-08-19,West,Beauty,Moisturizer,30,132.4,4.0,VIP,3813.12
+ORD-0174,2023-07-09,South,Clothing,Sneakers,46,156.14,9.7,Returning,6485.74
+ORD-0175,2023-08-13,North,Beauty,Face Wash,5,487.1,28.9,VIP,1731.64
+ORD-0176,2023-10-10,North,Beauty,Moisturizer,12,642.66,34.2,Returning,5074.44
+ORD-0177,2023-05-01,West,Food,Protein Bar,16,185.97,33.2,New,1987.65
+ORD-0178,2023-04-26,East,Clothing,Dress,26,348.94,15.9,VIP,7629.92
+ORD-0179,2023-08-21,West,Food,Honey,26,897.3,26.7,Returning,17100.74
+ORD-0180,2023-09-16,West,Sports,Water Bottle,48,476.59,8.2,Returning,21000.46
+ORD-0181,2023-12-25,West,Beauty,Serum,21,669.21,11.7,New,12409.16
+ORD-0182,2023-07-17,North,Clothing,Jacket,39,176.46,35.9,VIP,4411.32
+ORD-0183,2023-05-17,North,Food,Protein Bar,36,196.33,0.5,VIP,7032.54
+ORD-0184,2023-11-14,North,Beauty,Moisturizer,33,45.66,0.0,VIP,1506.78
+ORD-0185,2023-06-14,West,Electronics,Headphones,30,173.09,8.3,New,4761.71
+ORD-0186,2023-08-13,East,Food,Almonds,37,282.19,1.1,VIP,10326.18
+ORD-0187,2023-11-03,North,Clothing,Dress,23,181.12,7.3,VIP,3861.66
+ORD-0188,2023-08-22,South,Food,Protein Bar,10,93.26,23.3,Returning,715.3
+ORD-0189,2023-06-21,South,Food,Green Tea,5,125.03,16.9,Returning,519.5
+ORD-0190,2023-06-01,South,Food,Almonds,36,463.47,35.7,New,10728.4
+ORD-0191,2023-11-11,West,Sports,Water Bottle,34,210.3,0.0,VIP,7150.2
+ORD-0192,2023-06-09,South,Electronics,Laptop,31,367.44,13.7,Returning,9830.12
+ORD-0193,2023-04-06,West,Clothing,Dress,10,505.9,10.4,New,4532.86
+ORD-0194,2023-08-21,South,Clothing,T-Shirt,19,691.94,15.2,VIP,11148.54
+ORD-0195,2023-06-29,East,Clothing,Sneakers,32,44.12,23.6,New,1078.65
+ORD-0196,2023-04-23,West,Beauty,Moisturizer,1,800.41,10.7,VIP,714.77
+ORD-0197,2023-11-14,South,Clothing,Jeans,5,453.29,25.0,Returning,1699.84
+ORD-0198,2023-02-21,North,Clothing,Jacket,45,86.35,16.4,VIP,3248.49
+ORD-0199,2023-09-25,West,Electronics,Laptop,4,874.2,22.1,VIP,2724.01
+ORD-0200,2023-10-22,North,Beauty,Face Wash,16,921.26,17.4,VIP,12175.37
+ORD-0201,2023-04-23,North,Beauty,Face Wash,24,65.77,11.8,VIP,1392.22
+ORD-0202,2023-04-11,North,Food,Green Tea,16,280.49,37.9,New,2786.95
+ORD-0203,2023-04-23,North,Sports,Resistance Band,2,807.16,30.5,VIP,1121.95
+ORD-0204,2023-03-22,South,Beauty,Sunscreen,49,749.51,5.6,New,34669.33
+ORD-0205,2023-07-06,South,Beauty,Sunscreen,28,188.6,34.7,VIP,3448.36
+ORD-0206,2023-04-23,West,Electronics,Headphones,32,213.3,19.5,VIP,5494.61
+ORD-0207,2023-01-02,West,Clothing,Dress,27,373.62,35.8,New,6476.33
+ORD-0208,2023-05-10,West,Beauty,Face Wash,20,487.1,32.0,Returning,6624.56
+ORD-0209,2023-08-08,South,Beauty,Serum,24,620.16,17.0,Returning,12353.59
+ORD-0210,2023-02-23,West,Sports,Resistance Band,12,372.07,0.9,New,4424.66
+ORD-0211,2023-12-09,North,Electronics,Smartwatch,50,465.22,10.7,VIP,20772.07
+ORD-0212,2023-08-12,South,Sports,Resistance Band,35,748.73,21.7,Returning,20518.95
+ORD-0213,2023-08-13,West,Beauty,Sunscreen,33,41.5,25.3,VIP,1023.02
+ORD-0214,2023-05-06,North,Beauty,Sunscreen,33,256.17,10.3,New,7582.89
+ORD-0215,2023-05-10,West,Electronics,Smartwatch,43,714.78,5.6,New,29014.35
+ORD-0216,2023-02-22,East,Food,Honey,37,895.72,33.4,Returning,22072.33
+ORD-0217,2023-06-21,West,Food,Protein Bar,12,514.11,39.4,Returning,3738.61
+ORD-0218,2023-08-06,East,Beauty,Sunscreen,3,534.45,21.0,VIP,1266.65
+ORD-0219,2023-06-09,West,Beauty,Face Wash,1,111.64,6.9,Returning,103.94
+ORD-0220,2023-07-17,West,Sports,Skipping Rope,33,450.17,10.9,New,13236.35
+ORD-0221,2023-09-04,South,Sports,Resistance Band,40,534.95,0.7,New,21248.21
+ORD-0222,2023-11-20,South,Sports,Water Bottle,10,246.26,36.6,New,1561.29
+ORD-0223,2023-07-22,East,Clothing,Jacket,43,272.89,4.7,VIP,11182.76
+ORD-0224,2023-07-03,South,Beauty,Face Wash,44,380.39,23.1,Returning,12870.88
+ORD-0225,2023-05-03,North,Clothing,T-Shirt,29,24.97,11.0,VIP,644.48
+ORD-0226,2023-09-12,North,Food,Green Tea,13,325.47,22.2,VIP,3291.8
+ORD-0227,2023-10-21,East,Beauty,Sunscreen,12,215.39,26.1,Returning,1910.08
+ORD-0228,2023-10-07,North,Beauty,Sunscreen,31,330.86,33.2,New,6851.45
+ORD-0229,2023-11-21,North,Electronics,Smartphone,46,124.16,8.3,Returning,5237.32
+ORD-0230,2023-04-08,West,Beauty,Lipstick,2,891.07,0.4,Returning,1775.01
+ORD-0231,2023-07-17,South,Food,Oats,50,595.62,5.5,Returning,28143.04
+ORD-0232,2023-08-28,North,Beauty,Face Wash,35,680.7,36.0,VIP,15247.68
+ORD-0233,2023-05-24,North,Clothing,Jeans,23,790.22,35.0,Returning,11813.79
+ORD-0234,2023-04-07,South,Beauty,Serum,17,500.95,23.9,New,6480.79
+ORD-0235,2023-07-20,North,Clothing,Sneakers,26,91.48,24.0,Returning,1807.64
+ORD-0236,2023-05-04,North,Sports,Skipping Rope,8,539.42,26.6,New,3167.47
+ORD-0237,2023-07-06,South,Sports,Resistance Band,29,588.9,7.0,New,15882.63
+ORD-0238,2023-11-22,West,Electronics,Laptop,26,746.7,36.6,New,12308.6
+ORD-0239,2023-12-15,North,Beauty,Sunscreen,10,434.5,16.8,VIP,3615.04
+ORD-0240,2023-09-16,South,Sports,Skipping Rope,26,131.94,15.3,VIP,2905.58
+ORD-0241,2023-05-28,North,Sports,Skipping Rope,34,287.35,20.8,VIP,7737.76
+ORD-0242,2023-09-09,North,Electronics,Smartphone,41,465.22,1.9,Returning,18711.61
+ORD-0243,2023-12-12,West,Electronics,Smartwatch,7,647.68,6.7,VIP,4230.0
+ORD-0244,2023-05-27,East,Beauty,Lipstick,4,572.92,29.5,Returning,1615.63
+ORD-0245,2023-05-28,East,Clothing,Dress,50,359.31,3.3,New,17372.64
+ORD-0246,2023-12-18,South,Beauty,Lipstick,45,986.57,0.0,Returning,44395.65
+ORD-0247,2023-07-18,East,Clothing,Jacket,11,607.74,9.8,New,6030.0
+ORD-0248,2023-11-04,South,Electronics,Smartphone,29,241.04,15.6,Returning,5899.7
+ORD-0249,2023-05-08,East,Food,Green Tea,36,106.27,11.5,VIP,3385.76
+ORD-0250,2023-02-08,West,Beauty,Lipstick,25,157.09,14.2,New,3369.58
+ORD-0251,2023-12-04,South,Food,Honey,21,249.73,28.8,Returning,3733.96
+ORD-0252,2023-12-26,East,Clothing,Dress,36,164.88,11.9,Returning,5229.33
+ORD-0253,2023-05-09,West,Beauty,Lipstick,10,190.63,22.7,VIP,1473.57
+ORD-0254,2023-09-24,East,Food,Honey,37,288.67,19.0,VIP,8651.44
+ORD-0255,2023-05-31,North,Food,Oats,9,177.5,26.5,VIP,1174.16
+ORD-0256,2023-10-25,North,Beauty,Face Wash,24,897.27,37.5,Returning,13459.05
+ORD-0257,2023-04-09,West,Food,Honey,35,84.83,29.3,VIP,2099.12
+ORD-0258,2023-09-20,North,Beauty,Face Wash,49,526.88,8.6,Returning,23596.85
+ORD-0259,2023-09-09,North,Food,Almonds,35,413.34,1.2,VIP,14293.3
+ORD-0260,2023-05-24,South,Electronics,Headphones,48,982.46,10.5,Returning,42206.48
+ORD-0261,2023-12-12,East,Beauty,Lipstick,36,116.48,23.8,New,3195.28
+ORD-0262,2023-04-22,South,Electronics,Smartphone,18,400.86,2.1,VIP,7063.95
+ORD-0263,2023-03-01,East,Sports,Skipping Rope,49,969.61,19.9,New,38056.22
+ORD-0264,2023-01-02,North,Electronics,Tablet,39,866.17,23.9,Returning,25707.06
+ORD-0265,2023-10-31,South,Food,Protein Bar,32,817.98,13.4,New,22667.86
+ORD-0266,2023-09-11,East,Clothing,Sneakers,24,261.61,30.8,VIP,4344.82
+ORD-0267,2023-05-20,East,Electronics,Smartwatch,23,175.03,4.3,VIP,3852.59
+ORD-0268,2023-02-06,South,Electronics,Smartwatch,32,670.29,3.0,Returning,20805.8
+ORD-0269,2023-06-09,West,Electronics,Smartphone,37,929.72,29.1,VIP,24389.34
+ORD-0270,2023-01-09,East,Clothing,Jeans,12,558.97,19.8,New,5379.53
+ORD-0271,2023-08-21,North,Clothing,Sneakers,49,573.75,27.5,VIP,20382.47
+ORD-0272,2023-04-09,East,Electronics,Headphones,13,283.58,17.4,New,3045.08
+ORD-0273,2023-05-27,North,Sports,Water Bottle,23,770.64,9.9,VIP,15969.97
+ORD-0274,2023-10-31,South,Clothing,Dress,25,191.11,32.8,Returning,3210.65
+ORD-0275,2023-07-27,East,Clothing,Dress,35,327.06,32.0,VIP,7784.03
+ORD-0276,2023-05-11,North,Clothing,T-Shirt,41,428.31,27.8,Returning,12678.83
+ORD-0277,2023-06-01,North,Beauty,Moisturizer,30,510.07,10.9,VIP,13634.17
+ORD-0278,2023-02-23,South,Electronics,Headphones,17,246.2,23.6,Returning,3197.65
+ORD-0279,2023-04-30,East,Sports,Water Bottle,49,592.525,14.4,New,24852.87
+ORD-0280,2023-06-10,East,Clothing,Jeans,20,612.56,3.7,New,11797.91
+ORD-0281,2023-04-26,South,Beauty,Lipstick,48,292.18,36.7,New,8877.6
+ORD-0282,2023-03-16,East,Food,Honey,25,583.33,5.5,New,13781.17
+ORD-0283,2023-04-23,South,Food,Honey,22,158.59,38.0,Returning,2163.17
+ORD-0284,2023-04-14,East,Clothing,T-Shirt,13,483.73,17.8,Returning,5169.14
+ORD-0285,2023-12-06,West,Sports,Yoga Mat,19,534.92,7.4,New,9411.38
+ORD-0286,2023-09-11,East,Sports,Water Bottle,49,56.56,21.7,New,2170.04
+ORD-0287,2023-08-15,North,Electronics,Laptop,36,339.92,34.9,New,7966.37
+ORD-0288,2023-04-22,North,Clothing,Jeans,12,138.74,29.3,VIP,1177.07
+ORD-0289,2023-04-09,West,Food,Almonds,41,68.06,32.3,New,1889.14
+ORD-0290,2023-06-02,East,Electronics,Tablet,19,990.0,26.4,Returning,13844.16
+ORD-0291,2023-12-15,North,Sports,Yoga Mat,12,325.74,27.7,Returning,2826.12
+ORD-0292,2023-12-04,North,Electronics,Tablet,9,810.82,34.0,Returning,4816.27
+ORD-0293,2023-07-13,East,Food,Honey,7,258.36,10.0,VIP,1627.67
+ORD-0294,2023-11-06,South,Sports,Yoga Mat,28,683.09,19.6,VIP,15377.72
+ORD-0295,2023-06-12,East,Beauty,Moisturizer,14,761.42,8.8,VIP,9721.81
+ORD-0296,2023-07-27,South,Beauty,Face Wash,31,597.65,39.5,VIP,11208.93
+ORD-0297,2023-06-18,West,Clothing,Dress,19,474.21,37.8,Returning,5604.21
+ORD-0298,2023-06-10,West,Electronics,Smartphone,47,414.78,1.6,VIP,19182.75
+ORD-0299,2023-03-09,North,Sports,Dumbbells,16,352.12,28.2,VIP,4045.15
+ORD-0300,2023-10-16,North,Clothing,Dress,5,929.87,37.0,VIP,2929.09

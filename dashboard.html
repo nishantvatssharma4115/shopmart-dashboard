@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ShopSmart Analytics Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg: #0a0e1a; --surface: #111827; --card: #1a2235;
+    --border: #1e2d45; --accent: #3b82f6; --accent2: #06b6d4;
+    --green: #10b981; --purple: #8b5cf6; --amber: #f59e0b;
+    --text: #e2e8f0; --muted: #64748b; --white: #ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+
+  /* ── NAVBAR ── */
+  nav{background:linear-gradient(90deg,#0f172a,#1e3a5f);border-bottom:1px solid var(--border);
+    padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:64px;
+    position:sticky;top:0;z-index:100;box-shadow:0 4px 20px rgba(0,0,0,.4);}
+  .nav-brand{display:flex;align-items:center;gap:.75rem;}
+  .nav-logo{width:36px;height:36px;background:linear-gradient(135deg,var(--accent),var(--accent2));
+    border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;}
+  .nav-title{font-size:1.2rem;font-weight:700;background:linear-gradient(90deg,#60a5fa,#22d3ee);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+  .nav-badge{font-size:.7rem;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);
+    color:#60a5fa;padding:.2rem .6rem;border-radius:20px;}
+
+  /* ── MAIN ── */
+  main{max-width:1400px;margin:0 auto;padding:2rem 1.5rem 3rem;}
+  .section-title{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:1rem;}
+
+  /* ── KPI CARDS ── */
+  .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:2.5rem;}
+  .kpi{background:var(--card);border:1px solid var(--border);border-radius:16px;
+    padding:1.4rem 1.6rem;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;}
+  .kpi:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.4);}
+  .kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
+  .kpi:nth-child(1)::before{background:linear-gradient(90deg,var(--accent),var(--accent2));}
+  .kpi:nth-child(2)::before{background:linear-gradient(90deg,var(--green),#34d399);}
+  .kpi:nth-child(3)::before{background:linear-gradient(90deg,var(--purple),#a78bfa);}
+  .kpi:nth-child(4)::before{background:linear-gradient(90deg,var(--amber),#fcd34d);}
+  .kpi-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+    font-size:1.2rem;margin-bottom:1rem;}
+  .kpi:nth-child(1) .kpi-icon{background:rgba(59,130,246,.12);}
+  .kpi:nth-child(2) .kpi-icon{background:rgba(16,185,129,.12);}
+  .kpi:nth-child(3) .kpi-icon{background:rgba(139,92,246,.12);}
+  .kpi:nth-child(4) .kpi-icon{background:rgba(245,158,11,.12);}
+  .kpi-label{font-size:.78rem;color:var(--muted);font-weight:500;margin-bottom:.4rem;}
+  .kpi-value{font-size:1.75rem;font-weight:800;letter-spacing:-.02em;color:var(--white);}
+  .kpi-sub{font-size:.75rem;color:var(--green);margin-top:.35rem;}
+
+  /* ── CHART GRID ── */
+  .chart-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-bottom:2.5rem;}
+  .chart-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.4rem;
+    transition:box-shadow .2s;}
+  .chart-card:hover{box-shadow:0 8px 30px rgba(0,0,0,.35);}
+  .chart-card.wide{grid-column:span 2;}
+  .chart-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.2rem;}
+  .chart-title{font-size:.9rem;font-weight:600;color:var(--text);}
+  .chart-dot{width:8px;height:8px;border-radius:50%;}
+  .chart-canvas-wrap{position:relative;height:220px;}
+
+  /* ── INSIGHTS ── */
+  .insights{background:var(--card);border:1px solid var(--border);border-radius:16px;
+    padding:1.8rem 2rem;margin-bottom:2.5rem;}
+  .insights h2{font-size:1.1rem;font-weight:700;margin-bottom:1.25rem;
+    background:linear-gradient(90deg,#60a5fa,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+  .insight-list{list-style:none;display:flex;flex-direction:column;gap:.9rem;}
+  .insight-list li{display:flex;gap:.9rem;align-items:flex-start;font-size:.88rem;line-height:1.6;color:#cbd5e1;}
+  .insight-num{min-width:26px;height:26px;border-radius:6px;background:linear-gradient(135deg,var(--accent),var(--accent2));
+    display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:#fff;flex-shrink:0;}
+
+  /* ── FOOTER ── */
+  footer{text-align:center;padding:1.5rem;border-top:1px solid var(--border);
+    color:var(--muted);font-size:.8rem;letter-spacing:.03em;}
+  footer span{color:var(--accent);}
+
+  @media(max-width:900px){
+    .kpi-grid{grid-template-columns:repeat(2,1fr);}
+    .chart-grid{grid-template-columns:1fr;}
+    .chart-card.wide{grid-column:span 1;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-logo">📊</div>
+    <span class="nav-title">ShopSmart Analytics Dashboard</span>
+  </div>
+  <div class="nav-badge">FY 2023 · 300 Orders</div>
+</nav>
+
+<main>
+
+  <!-- KPI CARDS -->
+  <p class="section-title">Key Performance Indicators</p>
+  <div class="kpi-grid">
+    <div class="kpi">
+      <div class="kpi-icon">💰</div>
+      <div class="kpi-label">Total Revenue</div>
+      <div class="kpi-value">₹24,83,450</div>
+      <div class="kpi-sub">↑ 12.4% vs target</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-icon">🛒</div>
+      <div class="kpi-label">Total Orders</div>
+      <div class="kpi-value">300</div>
+      <div class="kpi-sub">↑ Avg ₹8,278 / order</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-icon">📍</div>
+      <div class="kpi-label">Top Region</div>
+      <div class="kpi-value">North</div>
+      <div class="kpi-sub">82 orders · 27.3%</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-icon">🏆</div>
+      <div class="kpi-label">Best Category</div>
+      <div class="kpi-value">Electronics</div>
+      <div class="kpi-sub">₹5,82,340 revenue</div>
+    </div>
+  </div>
+
+  <!-- CHARTS ROW 1 -->
+  <p class="section-title">Revenue & Sales Analysis</p>
+  <div class="chart-grid">
+
+    <!-- Chart 1: Revenue by Category -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Revenue by Product Category</span>
+        <div class="chart-dot" style="background:#3b82f6;"></div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="c1"></canvas></div>
+    </div>
+
+    <!-- Chart 2: Monthly Trend -->
+    <div class="chart-card wide">
+      <div class="chart-header">
+        <span class="chart-title">Monthly Revenue Trend — 2023</span>
+        <div class="chart-dot" style="background:#06b6d4;"></div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="c2"></canvas></div>
+    </div>
+
+    <!-- Chart 3: Customer Segment Pie -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Orders by Customer Segment</span>
+        <div class="chart-dot" style="background:#8b5cf6;"></div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="c3"></canvas></div>
+    </div>
+
+    <!-- Chart 4: Region Orders -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Orders by Region</span>
+        <div class="chart-dot" style="background:#10b981;"></div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="c4"></canvas></div>
+    </div>
+
+    <!-- Chart 5: Top 5 Products -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="chart-title">Top 5 Products by Revenue</span>
+        <div class="chart-dot" style="background:#f59e0b;"></div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="c5"></canvas></div>
+    </div>
+
+    <!-- Chart 6: Discount Trend -->
+    <div class="chart-card wide">
+      <div class="chart-header">
+        <span class="chart-title">Average Discount % Trend by Month</span>
+        <div class="chart-dot" style="background:#f43f5e;"></div>
+      </div>
+      <div class="chart-canvas-wrap"><canvas id="c6"></canvas></div>
+    </div>
+
+  </div>
+
+  <!-- INSIGHTS -->
+  <div class="insights">
+    <h2>🔍 Key Business Insights</h2>
+    <ul class="insight-list">
+      <li>
+        <span class="insight-num">1</span>
+        <span><strong style="color:#60a5fa;">Electronics leads in average order value</strong> at ₹5,82,340 in total revenue, driven primarily by high-ticket items like Laptops and Smartphones — indicating strong demand in urban regions. Focused upselling in this category can yield significant margin improvements.</span>
+      </li>
+      <li>
+        <span class="insight-num">2</span>
+        <span><strong style="color:#34d399;">February and September are peak revenue months</strong>, contributing 11.1% and 10.6% of annual revenue respectively. These spikes align with seasonal sale events — the business should allocate higher inventory and marketing budgets in these months.</span>
+      </li>
+      <li>
+        <span class="insight-num">3</span>
+        <span><strong style="color:#a78bfa;">Returning customers dominate with 36.7% of all orders</strong>, followed closely by VIP customers at 35.7%. New customers account for only 27.7%, suggesting a strong retention rate but a need to invest in acquisition campaigns to grow the top-of-funnel.</span>
+      </li>
+      <li>
+        <span class="insight-num">4</span>
+        <span><strong style="color:#fbbf24;">The North region offers the highest average discount (20.89%)</strong>, which may be eroding profit margins. A pricing audit for this region is recommended to identify whether discounts are translating to proportional volume gains or simply reducing revenue per order.</span>
+      </li>
+      <li>
+        <span class="insight-num">5</span>
+        <span><strong style="color:#fb7185;">November shows the lowest monthly revenue at ₹1,05,200</strong> — a 70% drop from the February peak. This creates a strategic opportunity to introduce flash sales, bundle offers, or loyalty rewards in Q4 to smoothen the seasonal revenue curve and reduce end-of-year slumps.</span>
+      </li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>
+  Built by <span>Nishant Sharma</span> &nbsp;|&nbsp; Data Visualisation &amp; Analytics &nbsp;|&nbsp; Rishihood University 2025-26
+</footer>
+
+<script>
+// ── SHARED DEFAULTS ──────────────────────────────────────────
+Chart.defaults.color = '#94a3b8';
+Chart.defaults.font.family = "'Inter', sans-serif";
+Chart.defaults.font.size = 11;
+
+const gridColor = 'rgba(255,255,255,0.05)';
+const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+// ── CHART 1: Revenue by Category (Horizontal Bar) ───────────
+new Chart(document.getElementById('c1'), {
+  type: 'bar',
+  data: {
+    labels: ['Electronics','Clothing','Beauty','Food','Sports'],
+    datasets: [{
+      label: 'Revenue (₹)',
+      data: [582340, 523680, 489120, 462780, 425530],
+      backgroundColor: ['#3b82f6','#60a5fa','#93c5fd','#bfdbfe','#dbeafe'],
+      borderRadius: 6,
+      borderSkipped: false
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ' ₹' + ctx.raw.toLocaleString('en-IN') } }
+    },
+    scales: {
+      x: { grid: { color: gridColor }, ticks: { callback: v => '₹' + (v/1000).toFixed(0) + 'K' } },
+      y: { grid: { display: false } }
+    }
+  }
+});
+
+// ── CHART 2: Monthly Revenue Line ────────────────────────────
+new Chart(document.getElementById('c2'), {
+  type: 'line',
+  data: {
+    labels: months,
+    datasets: [{
+      label: 'Revenue (₹)',
+      data: [145200,278300,198450,162100,254800,248900,231050,239800,263900,177300,105200,178450],
+      borderColor: '#06b6d4',
+      backgroundColor: 'rgba(6,182,212,0.08)',
+      borderWidth: 2.5,
+      pointBackgroundColor: '#06b6d4',
+      pointRadius: 5, pointHoverRadius: 7,
+      fill: true, tension: 0.4
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ' ₹' + ctx.raw.toLocaleString('en-IN') } }
+    },
+    scales: {
+      x: { grid: { color: gridColor } },
+      y: { grid: { color: gridColor }, ticks: { callback: v => '₹' + (v/1000).toFixed(0) + 'K' } }
+    }
+  }
+});
+
+// ── CHART 3: Customer Segment Pie ────────────────────────────
+new Chart(document.getElementById('c3'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Returning','VIP','New'],
+    datasets: [{
+      data: [110, 107, 83],
+      backgroundColor: ['#8b5cf6','#a78bfa','#ddd6fe'],
+      borderColor: '#1a2235',
+      borderWidth: 3,
+      hoverOffset: 8
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    cutout: '65%',
+    plugins: {
+      legend: { position: 'bottom', labels: { padding: 16, usePointStyle: true } },
+      tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ${ctx.raw} orders (${((ctx.raw/300)*100).toFixed(1)}%)` } }
+    }
+  }
+});
+
+// ── CHART 4: Orders by Region (Bar) ──────────────────────────
+new Chart(document.getElementById('c4'), {
+  type: 'bar',
+  data: {
+    labels: ['North','South','East','West'],
+    datasets: [{
+      label: 'Orders',
+      data: [82, 76, 74, 68],
+      backgroundColor: ['#10b981','#34d399','#6ee7b7','#a7f3d0'],
+      borderRadius: 6,
+      borderSkipped: false
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { display: false } },
+      y: { grid: { color: gridColor }, beginAtZero: true }
+    }
+  }
+});
+
+// ── CHART 5: Top 5 Products (Bar) ────────────────────────────
+new Chart(document.getElementById('c5'), {
+  type: 'bar',
+  data: {
+    labels: ['Laptop','Jeans','Dumbbells','Almonds','Serum'],
+    datasets: [{
+      label: 'Revenue (₹)',
+      data: [312450, 278920, 245670, 218340, 192780],
+      backgroundColor: ['#f59e0b','#fbbf24','#fcd34d','#fde68a','#fef3c7'],
+      borderRadius: 6,
+      borderSkipped: false
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ' ₹' + ctx.raw.toLocaleString('en-IN') } }
+    },
+    scales: {
+      x: { grid: { display: false } },
+      y: { grid: { color: gridColor }, ticks: { callback: v => '₹' + (v/1000).toFixed(0) + 'K' } }
+    }
+  }
+});
+
+// ── CHART 6: Discount Trend Line ──────────────────────────────
+new Chart(document.getElementById('c6'), {
+  type: 'line',
+  data: {
+    labels: months,
+    datasets: [{
+      label: 'Avg Discount %',
+      data: [18.2, 19.8, 20.1, 17.5, 21.3, 19.2, 18.8, 20.5, 22.1, 19.4, 18.0, 23.5],
+      borderColor: '#f43f5e',
+      backgroundColor: 'rgba(244,63,94,0.07)',
+      borderWidth: 2.5,
+      pointBackgroundColor: '#f43f5e',
+      pointRadius: 5, pointHoverRadius: 7,
+      fill: true, tension: 0.4
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ` ${ctx.raw}%` } }
+    },
+    scales: {
+      x: { grid: { color: gridColor } },
+      y: { grid: { color: gridColor }, min: 15, max: 26,
+        ticks: { callback: v => v + '%' } }
+    }
+  }
+});
+</script>
+</body>
+</html>
